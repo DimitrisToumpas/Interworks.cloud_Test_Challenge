@@ -18,7 +18,7 @@ public class CheckoutTests extends TestBase{
 
         Log.info("Start Test Case: TestCheckoutStepOneErrorValidation");
 
-        Log.info("login...");
+        //Log.info("login...");
 
         LoginPage loginPage =  new LoginPage(driver);
         loginPage.Login(validUserName, validPassword);
@@ -26,7 +26,7 @@ public class CheckoutTests extends TestBase{
         loginPage.VerifyCurrentUrl(inventoryPage.inventoryPageUrl);
 
 
-        Log.info("Proceed with checkout after successful login");
+        //Log.info("Proceed with checkout after successful login");
 
 
         // after Login
@@ -54,14 +54,14 @@ public class CheckoutTests extends TestBase{
 
         Log.info("Start Test Case: TestCheckoutStepTwoValidation");
 
-        Log.info("login...");
+        //Log.info("login...");
 
         LoginPage loginPage = new LoginPage(driver);
         loginPage.Login(validUserName, validPassword);
         InventoryPage inventoryPage = new InventoryPage(driver);
         loginPage.VerifyCurrentUrl(inventoryPage.inventoryPageUrl);
 
-        Log.info("Proceed with checkout after successful login");
+        //Log.info("Proceed with checkout after successful login");
 
         // after Login
         inventoryPage.addToCart("backPack");

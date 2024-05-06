@@ -30,7 +30,7 @@ public class InventoryPage extends BasePage {
         }
         else if (item.equalsIgnoreCase("backPack")){
             addToCartBackPack.click();
-            Log.info("back Pack added to cart!");
+            Log.info("BackPack added to cart!");
         }
         else if (item.equalsIgnoreCase("FleeceJacket")){
             addToCartFleeceJacket.click();
